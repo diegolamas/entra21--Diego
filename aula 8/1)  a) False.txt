@@ -1,0 +1,56 @@
+1)  a) False
+    b) True
+    c) True
+    d) False
+
+
+2)   a) True
+     b) True
+     c) 
+     d) False
+     e) True    
+     f) False
+     g) False
+     h) False
+
+
+
+3)        let valorA = Number(prompt("digite o valor de a"))
+        if (valorA > 10){
+            console.log("o valor A é maior que 10")
+        }
+          console.log("programa finalizado")
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+5)           
+let valorA = Number(prompt("Digite um número "))
+        
+if (valorA % 2 == 0) {
+console.log("O número é par")    }
+else{console.log(" número  é ímpar")
+}
+console.log("....programa finalizado....")    
+
+
+
+
+6)  let valorA = Number(prompt("Digite um número "))
+        
+        if (valorA > 20 && valorA < 90) {
+            console.log("O número esta dentro da faixa!")
+        } else {
+            console.log("o numero esta fora da faixa")
+        }   
+
