@@ -1,0 +1,167 @@
+1)  a) False
+    b) True
+    c) True
+    d) False
+
+
+2)   a) True
+     b) True
+     c) 
+     d) False
+     e) True    
+     f) False
+     g) False
+     h) False
+
+
+
+3)        let valorA = Number(prompt("digite o valor de a"))
+        if (valorA > 10){
+            console.log("o valor A é maior que 10")
+        }
+          console.log("programa finalizado")
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+5)           
+let valorA = Number(prompt("Digite um número "))
+        
+if (valorA % 2 == 0) {
+console.log("O número é par")    }
+else{console.log(" número  é ímpar")
+}
+console.log("....programa finalizado....")    
+
+
+
+
+6)  let valorA = Number(prompt("Digite um número "))
+        
+        if (valorA > 20 && valorA < 90) {
+            console.log("O número esta dentro da faixa!")
+        } else {
+            console.log("o numero esta fora da faixa")
+        }   
+
+
+
+
+
+
+
+
+
+
+
+8)let valorA = Number(prompt("escreva um número"))
+let valorB = Number(prompt("escreva um número"))
+let valorC = Number(prompt("escreva um número"))
+
+if (valorA > valorB && valorA > valorC ) {
+    console.log(valorA)
+} else if (valorB > valorA && valorB> valorC ) {
+    console.log(valorB)
+} else if (valorC > valorB && valorC > valorA) {
+    console.log(valorC)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14)alert ("escolher um número de 1 a 7")
+let = dia = Number(prompt("digite um número"))
+switch (dia) {
+case 1: 
+console.log("o dia é domingo")
+break;
+case 2:
+console.log("o dia é segunda-feira")
+break;
+case 3:
+console.log("o dia é terça-feira")
+break;
+case 4: 
+console.log("o dia é quarta-feira")
+break;
+case 5:
+console.log("o dia é quinta-feira")
+break;
+case 6:
+console.log("o dia é sexta-feira")
+break;
+case 7:
+console.log("o dia é sábado")
+break; 
+default:   
+console.log(' o número não corresponde a nenhum dia da semana')
+}
+
+
+15)let = mês = Number(prompt("digite um número"))
+switch (mês) {
+case 1: 
+console.log("o mês é janeiro")
+break;
+case 2:
+console.log("o mês é fevereiro")
+break;
+case 3:
+console.log("o mês é março")
+break;
+case 4: 
+console.log("o mês é abril")
+break;
+case 5:
+console.log("o mês é maio")
+break;
+case 6:
+console.log("o mês é junho")
+break;
+case 7:
+console.log("o mês é julho")
+break;
+case 8: 
+console.log("o mês é agosto")
+break; 
+case 9:
+console.log("o mês é setembro")
+break;
+case 10:
+console.log("o mês é outubro") 
+break;
+case 11:
+console.log("o mês é novembro")
+break;
+case 12: 
+console.log("o mês é dezembro")
+break;
+default:   
+console.log('Esse número não corresponde a nenhum mês do ano...')
+}
