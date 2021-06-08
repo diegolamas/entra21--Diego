@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+     let matriz = []
+
+menu()
+
+function menu() {
+    
+
+    let inicio
+
+    do {
+
+    let opcao = prompt("Menu de Alunos\n1) Cadastrar aluno\n2) Editar informações do aluno\n3) Cadastrar notas de um aluno\n4) Listar alunos\n0) Sair")
+
+
+    inicio = funcoesMenu(opcao)
+
+    } while (inicio == true)
+
+}
+
+    function funcoesMenu(opcao) {
+function funcoesMenu(opcao) {
+
+//talvez dropdown menu?
+
+switch(opcao) {
+    case "1":
+        cadastroAlunos()
+        break
+    case "2":
+        matriculaAluno();
+        break;
+    case "3":
+        cadastroNotas()
+        break
+    case "4":
+        listagemAlunos()
+        break
+    case "0":
+    case null:
+        return false;
+        break;
+    default:
+        alert(`${opcao} não é uma opção válida!`)     
+}
+
+    //talvez dropdown menu?
+// ver se precisa desse return msm depois
+return true
+
+    switch(opcao) {
+        case "1":
+            cadastroAlunos()
+            break
+        case "2":
+            matriculaAluno();
+            break;
+        case "3":
+            cadastroNotas()
+            break
+        case "4":
+            listagemAlunos()
+            break
+        case "0":
+        case null:
+            return false;
+            break;
+        default:
+            alert(`${opcao} não é uma opção válida!`)     
+}
+
+function cadastroAlunos() {
+
+    let matricula = prompt("Digite o número de matrícula")
+    let nome = prompt("Digite o nome do aluno")
+
+    for(let a of matriz) {
+        if (matricula === a[0]){
+            return alert("A matrícula digitada já está cadastrada!")
+        } 
+    }
+
+    // ver se precisa desse return msm depois
+    return true
+    matrizNovoAluno = []     
+    matrizNovoAluno.push(matricula, nome)
+    matriz.push(matrizNovoAluno)    
+
+    }
+    // return matriculaAluno(matricula, nome)
+}
+
+function matriculaAluno() {
+    let matriculaDigitada = +prompt("Digite a matrícula do aluno que você quer editar:")
+    let bool = false
+
+    for(let a of matriz) {
+        if (a[0] == matriculaDigitada) {
+            a[1] = prompt("Insira o nome do aluno já editado:")
+            bool = true
+            break
+        }
+    }
+}
+
+function cadastroNotas(notas, matricula) {
+    let matricula1 = +prompt("Digite o número de matrícula")
+
+    for (let a of matriz){
+        if (matricula1 == a[0]) {
+            let notas = []
+                for (let i = 0; i < 3; i++) {
+                    notas[i] = +prompt("Digite suas notas")
+                }
+            salvarNotas(notas, matricula1)
+            return calculoNotas(notas,matricula)
+        } 
+    }
+    alert("Não foi possivel encontrar a matrícula")
+}
+
+    function listagemAlunos () {
+function salvarNotas(notas, matricula) {
+    for(let a of matriz) { 
+        if(matricula == a[0]) {
+            a[2] = notas[0]
+            a[3] = notas[1]
+            a[4] = notas[2]
+
+        let matrizOrganizada = []
+
+        for (let i = 0; i < matriz.length; i++){
+        }
+    }
+}
+
+function calculoNotas(notas, matricula) {
+    let soma = 0
+    for(let i = 0; i < notas.length; i++) soma += notas[i];
+
+    let media = soma / notas.length
+    calculoMedia(media, matricula)
+} 
+
+function calculoMedia(media, matricula) {
+    for(let a of matriz) {
+        a[5] = media.toFixed(2)
+    }
+}
+
+function listagemAlunos () {
+
+    let matrizOrganizada = []
+
+    for(let i = 0; i < matriz.length; i++) {
+        matrizOrganizada.push({})
+        matrizOrganizada[i].Matricula = matriz[i][0]
+        matrizOrganizada[i].Nome = matriz[i][1]
+
+        if (matriz[i][2] == undefined){
+        if(matriz[i][2] == undefined) {
+            matrizOrganizada[i].Nota_1 = "--"
+            matrizOrganizada[i].Nota_2 = "--"
+            matrizOrganizada[i].Nota_3 = "--"
+            matrizOrganizada[i].Média = matriz[i][5]
+        }
+    }
+    
+
+    console.table(matrizOrganizada)
+        
+       
+    }
+
+
+ </script>
+</body>
+</html>
