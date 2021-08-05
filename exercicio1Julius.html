@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio julius</title>
+</head>
+<style>
+    .simulaçao {
+        border: 3px solid black;
+        width: 400px;
+        padding: 56px;
+        border-radius: 15px;
+        background-color: rgb(247, 222, 191);
+        font-family: cursive;
+        font-size: large;
+
+    }
+
+ 
+
+</style>
+
+<body>
+
+    <div class="simulaçao">
+        <label for="inicial">Valor Inicial</label>
+        <input type="number" name="inicial" id="inicial" value="10000">
+        <br><br>
+
+
+        <label for="juros">Taxa de Juros:</label>
+        <input type="number" name="juros" id="juros" value="5">
+        <br><br>
+        <label for="meses">Meses:</label>
+        <input type="number" name="meses" id="meses" value="12">
+
+        <p id=O Resultado é R${$}></p>
+    </div>
+
+    <form>
+        <button id="modal">Ingresse os seus dados</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Ingresse seus dados.</p>
+
+    </form>
+
+
+
+    </div>
+    <script>
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+
+        
+
+
+
+    </script>
+</body>
+
+
+
+</html>
